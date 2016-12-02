@@ -1,6 +1,6 @@
 /* Kevin Bao
    APCS1 pd1
-   HW36 -- Be More  Rational
+   HW37 -- Be More  Rational
    2016-11-30 */
 
 public class Rational {
