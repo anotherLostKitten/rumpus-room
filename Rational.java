@@ -90,16 +90,24 @@ public class Rational {
 	return GCD;
     }	
     public int compareTo(Rational num) {
-	this.reduce();
+	//reduce rational numbers
+	this.reduce(); 
 	num.reduce();
+	//if the two rational numbers are the same
 	if (n == num.n && d == num.d) {
 	    return 0;
 	}
+	//subtract parameter from calling number
 	this.subtract(num);
-	if (floatValue(n,d) > 0) {
+	//if numerator is greater than 0, then calling number is greater than parameter
+	if (n > 0) {
+	    //adds back the parameter to the calling number to set calling
+	    //number back to its original reduced value
 	    this.add(num);
 	    return 1;
 	}
+	//adds back the parameter to the calling number to set calling number
+	//back to its original reduced value
 	this.add(num);
 	return -1;
     } 
