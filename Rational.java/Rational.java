@@ -3,7 +3,7 @@
    HW37 -- Be More  Rational
    2016-11-30 */
 
-public class Rational {
+public class Rational{
     private int n; //numerator
     private int d; //denominator
 
