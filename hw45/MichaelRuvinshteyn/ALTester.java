@@ -5,7 +5,7 @@
 
 import java.util.ArrayList;
 
-public class ALTester1{
+public class ALTester{
 
     private ArrayList<Integer> _data = new ArrayList<Integer>();
 
