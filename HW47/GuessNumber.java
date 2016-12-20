@@ -70,5 +70,6 @@ public class GuessNumber {
     public static void main( String[] args ) {
 		GuessNumber game = new GuessNumber() ;
 		game.playR() ;
+	    	// game.playI() ;
     }
 }
