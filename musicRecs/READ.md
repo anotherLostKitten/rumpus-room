@@ -13,3 +13,18 @@ Add music to the Anon folder
 
 Try to categorize music under Artist name
 in Anon so that it doesn't become crowded
+
+ABOVE ALL PLEASE LOOK UP YOUR SONG AND FIND THE
+PROPER TITLE SO WE CAN FIND IT...
+IF YOU WANNA GO ONE STEP FARTHER THEN ADD WHERE
+YOU FOUND IT AS WELL
+
+suggested format:
+
+//where can find
+artist1:
+song1
+song2
+
+
+artist2
