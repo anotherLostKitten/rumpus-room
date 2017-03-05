@@ -119,27 +119,33 @@ class MazeSolver
 	delay(50); //slow it down enough to be followable
 	
 	//primary base case
-	if ( solved ) {
+	if ( x > w || x < 0 || y > h || y < 0 ){
+
+	}
+	else if ( solved ) {
 	    /* YOUR AMAZEING CODE HERE */
+	    System.out.println( this );
 	    System.exit(0);
 	}
 	//other base case(s)...
-	else if ( maze[y][x] == EXIT ) {
+	else if ( maze[x][y] == EXIT ) {
 	    /* YOUR AMAZEING CODE HERE */
 	    solved = true;
-	    System.out.println( this );
 	    System.out.println( "solved" );
 	}
-	else if ( maze[y][x] != PATH ) {
+	else if ( onPath(x,y) == false ) {
 	    /* YOUR AMAZEING CODE HERE */
 	}
-	//else if (  ) {
-	    /* YOUR AMAZEING CODE HERE */
-	//}
 	//recursive reduction
 	else {
-	    /* YOUR AMAZEING CODE HERE */     
-	    maze[y][x] = HERO;
+	    /* YOUR AMAZEING CODE HERE */
+	    //if (onPath(x,y)){
+	    maze[x][y] = HERO;
+	    System.out.println( this );
+	    delay(250);
+	    maze[x][y] = VISITED_PATH;
+	    System.out.println( this );
+		//}
 	    /*
 	        a 
 	      d @ b
@@ -149,6 +155,9 @@ class MazeSolver
 	    solve(x+1,y); // b
 	    solve(x,y-1); // c
 	    solve(x-1,y); // d
+
+	    maze[x][y] = PATH;
+	    
 	}
     }
     
@@ -174,7 +183,7 @@ public class Maze
 	    
 	    //drop hero into the maze (coords must be on path)
 	    //comment next line out when ready to randomize startpos
-	    ms.solve( 4, 3 ); 
+	    ms.solve( 0, 0 ); 
 	    
 		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//drop our hero into maze at random location on path
