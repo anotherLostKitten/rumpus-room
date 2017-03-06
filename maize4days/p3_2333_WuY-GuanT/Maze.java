@@ -17,9 +17,14 @@
  * (mazefile is ASCII representation of maze, using symbols below)
  *
  * ALGORITHM for finding exit from starting position:
- The algorithm starts at the starting point and checks if it is on the end point.
- If it is not on the endpoint, it recurisvely looks in every four directions (up, down, left, right)
-and checks if it is an endpoint until it reaches the end. If it hits a wall it stops looking in that direction
+ *  The algorithm starts at the starting point and checks if it is on
+   the end point.
+    If it is not on the endpoint, it recurisvely looks in every four 
+   directions (up, down, left, right)
+   and checks if it is an endpoint until it reaches the end. 
+    If it hits a wall it stops looking in that direction.
+    If it get to the end of the route while still didn't find a
+   solution, it will go back and do it in another direction.
  ***/
 
 //enable file I/O
